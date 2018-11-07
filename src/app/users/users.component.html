@@ -1,0 +1,29 @@
+<div float="right">
+    <ol>
+        <li *ngFor="let user of users" (click)="eachuserdata(user.id)" (click)="isFoo = true">
+                <a href="javascript:void(0)">{{user.name}}</a>
+
+        </li>
+    </ol>
+    </div>
+    <div style="position:realtive;text-align:center;border-style: solid;border-color: green;" *ngIf="isFoo">
+            <h2 style="color:orange">Details</h2>
+            <p>Name: {{userdetails.name}}</p>
+            <p>UserName: {{userdetails.username}}</p>
+            <p>Email: {{userdetails.email}}</p>
+            <p>Phone: {{userdetails.phone}}</p>
+            <p>Website:<a href="{{userdetails.website}}" > {{userdetails.website}} </a> </p>
+            <p style="color:darkblue"><b>Address</b></p> 
+                <p> Street: {{userdetails.address.street}} 
+                   Suite : {{userdetails.address.suite}} 
+                 City: {{userdetails.address.city}} 
+                 Zipcode: {{userdetails.address.zipcode}} 
+                 Geo Lat: {{userdetails.address.geo.lat}} 
+                 Geo Lang: {{userdetails.address.geo.lng}} </p>
+            <p style="color:red"> <b>Company</b> </p>
+            <p> Name: {{userdetails.company.name}} 
+             CatchPharse : {{userdetails.company.catchPhrase}} 
+              BS: {{userdetails.company.bs}} </p>
+            
+        
+</div>

@@ -1,0 +1,17 @@
+.navigation-wrapper {
+    width:465px;
+    margin:0 auto;
+    text-align:center;
+    text-align: justify;
+    position:absolute;
+     right: 580px;
+   }
+   
+   .navigation {
+    position:absolute; left: 50px;
+   }
+   li:hover  { cursor: pointer; }
+   .right{
+       float:right;
+       position:absolute; right: 100px;
+   }
